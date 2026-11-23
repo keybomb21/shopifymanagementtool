@@ -1,0 +1,31 @@
+name: "🧩 Shopify theme development"
+description: "Liquid, CSS, JavaScript, sections, templates, and storefront enhancements"
+title: "[Theme] "
+labels: []
+body:
+  - type: textarea
+    id: objective
+    attributes:
+      label: Goal and expected behavior
+    validations:
+      required: true
+  - type: input
+    id: page
+    attributes:
+      label: Relevant page or template
+      placeholder: "For example: product template or collection grid"
+  - type: textarea
+    id: implementation
+    attributes:
+      label: Implementation notes
+      description: Files, components, and constraints
+  - type: textarea
+    id: test
+    attributes:
+      label: Definition of done
+      value: |
+        - [ ] Implemented on feature branch
+        - [ ] Previewed in an unpublished Shopify theme
+        - [ ] Checked on desktop and mobile
+        - [ ] Pull request reviewed
+        - [ ] Production deployment verified
