@@ -1,0 +1,67 @@
+name: "📣 Marketing / content"
+description: "Social posts, email, blogs, ads, campaigns, and SEO content"
+title: "[Marketing] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Create one issue per scheduled deliverable. Also set Publish Date in the Project for the Marketing Schedule roadmap. Do not include confidential campaign details while this repository is public."
+  - type: dropdown
+    id: channel
+    attributes:
+      label: Marketing channel
+      options:
+        - Facebook
+        - Instagram
+        - TikTok
+        - Email
+        - Blog
+        - Google Ads
+        - Website
+        - Other
+    validations:
+      required: true
+  - type: dropdown
+    id: content_type
+    attributes:
+      label: Content type
+      options:
+        - Organic post
+        - Reel / short video
+        - Carousel
+        - Paid ad
+        - Newsletter
+        - Blog article
+        - Promotion / campaign
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: publish_date
+    attributes:
+      label: Planned publish date
+      placeholder: "YYYY-MM-DD"
+    validations:
+      required: true
+  - type: input
+    id: campaign
+    attributes:
+      label: Campaign or content series
+  - type: textarea
+    id: brief
+    attributes:
+      label: Creative brief
+      description: Audience, message, asset requirements, and CTA
+    validations:
+      required: true
+  - type: textarea
+    id: qa
+    attributes:
+      label: Publishing checklist
+      value: |
+        - [ ] Copy reviewed
+        - [ ] Creative assets reviewed
+        - [ ] Links checked
+        - [ ] Approved for publication
+        - [ ] Scheduled / published
+        - [ ] Results captured
