@@ -1,0 +1,47 @@
+name: "🛒 Shopify operations task"
+description: "Product listings, inventory, SEO, collections, and store administration"
+title: "[Store] "
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: "Use this form for day-to-day Shopify work. Do not enter private business information in a public repository."
+  - type: dropdown
+    id: category
+    attributes:
+      label: Task category
+      options:
+        - Products
+        - Inventory
+        - SEO
+        - Storefront
+        - Operations
+    validations:
+      required: true
+  - type: input
+    id: store
+    attributes:
+      label: Store
+      placeholder: "Store name or abbreviation"
+  - type: textarea
+    id: outcome
+    attributes:
+      label: Desired outcome
+      description: What should be changed or delivered?
+    validations:
+      required: true
+  - type: textarea
+    id: checklist
+    attributes:
+      label: Acceptance checklist
+      value: |
+        - [ ] Work completed
+        - [ ] Details checked
+        - [ ] Shopify storefront/admin verified
+        - [ ] Reviewer approved
+  - type: input
+    id: due
+    attributes:
+      label: Due date
+      description: "Also set the Project's Due Date field."
+      placeholder: "YYYY-MM-DD"
