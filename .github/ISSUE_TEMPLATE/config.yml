@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Team project board
+    url: https://github.com/users/keybomb21/projects
+    about: Open the shared Shopify Project to set owner, priority, status, and due dates.
